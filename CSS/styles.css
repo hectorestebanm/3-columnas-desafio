@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root
+{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);    
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);    
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: var(--Very-light-gray);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.card
+{
+    max-width: 330px;
+    height: 1320px;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 40px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.seccion-1, .seccion-2, .seccion-3
+{
+    /* max-width: 330px; */
+    height: 440px;
+    padding: 50px;
+}
+
+.seccion-1
+{
+    background-color: var(--Bright-orange);
+}
+
+.seccion-2
+{
+    background-color: var(--Dark-cyan);
+}
+
+.seccion-3
+{
+    background-color: var(--Very-dark-cyan);
+}
+
+.seccion-1__titulo, .seccion-2__titulo, .seccion-3__titulo
+{
+    font-size: 38px;
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--Very-light-gray);
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+
+.seccion-1__parrafo, .seccion-2__parrafo, .seccion-3__parrafo
+{
+    color: var(--Transparent-white);
+    line-height: 25px;
+    margin: 30px 0;
+}
+
+.seccion-1__boton, .seccion-2__boton, .seccion-3__boton
+{
+    width: 145px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.seccion-1__boton
+{
+    color: var(--Bright-orange);
+}
+
+.seccion-2__boton
+{
+    color: var(--Dark-cyan);
+}
+
+.seccion-3__boton
+{
+    color: var(--Very-dark-cyan);
+}
+
+.seccion-1__boton:hover
+{
+    color: var(--Transparent-white);
+    background-color: var(--Bright-orange);
+    border: 2px solid white;
+}
+
+.seccion-2__boton:hover
+{
+    color: var(--Transparent-white);
+    background-color: var(--Dark-cyan);
+    border: 2px solid white;
+}
+
+.seccion-3__boton:hover
+{
+    color: var(--Transparent-white);
+    background-color: var(--Very-dark-cyan);
+    border: 2px solid white;
+}
+
+.attribution
+{
+    font-size: 15px;
+    text-align: center;
+}
+
+.attribution a
+{
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media (min-width: 480px)
+{
+    .card
+    {
+        max-width: 920px;
+        height: 500px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .seccion-1, .seccion-2, .seccion-3
+    {
+        height: 500px;
+    }
+        .seccion-1__parrafo, .seccion-2__parrafo, .seccion-3__parrafo
+    {
+        font-size: 14px;
+    }
+    .seccion-1__boton, .seccion-2__boton, .seccion-3__boton
+    {
+        margin: 40px 0;
+    }
+
+}
